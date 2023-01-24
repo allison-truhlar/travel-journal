@@ -1,0 +1,99 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+img{
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.app-container{
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-bottom: 2.5em;
+  gap: 0.5em;
+  height: 55px;
+  background: #F55A5A;
+  color: #ffffff;
+}
+
+.header--text{
+  font-weight: 500;
+  font-size: 0.9em;
+  letter-spacing: -0.5px;
+}
+
+.card{
+  display: flex;
+  width: 90%;
+  min-height: 10rem;
+  margin: 0.5em 0 1.75em 0;
+  gap: 1em;
+}
+
+.card--img{
+  min-height: 100%;
+  min-width: 25%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card--info-container{
+  min-width: 65%;
+}
+
+.card--location-container{
+  display: flex;
+  align-items: center;
+  font-size:0.65rem;
+}
+
+.fa-location-dot{
+  color: #F55A5A;
+  margin-right: 4px;
+}
+
+.card--location-name{
+  text-transform: uppercase;
+  margin-right: 1em;
+}
+
+.card--location-map{
+  font-size: 0.65rem;
+  color: #918E9B;
+}
+
+.card--title{
+  margin-top: 0;
+  font-size: 1.56rem;
+  color: #2B283A;
+}
+
+.card--dates{
+  font-weight: 700;
+  font-size: 0.65rem;
+  line-height: 75%;
+  color: #2B283A;
+}
+
+.card--description{
+  font-size: 0.65rem;
+  line-height: 150%;
+  color: #2B283A;
+}
