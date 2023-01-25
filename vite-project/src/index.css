@@ -41,10 +41,15 @@ img{
 
 .card{
   display: flex;
+  align-items: center;
   width: 90%;
   min-height: 10rem;
   margin: 0.5em 0 1.75em 0;
   gap: 1em;
+}
+
+.card--img-container{
+  align-self: stretch;
 }
 
 .card--img{
@@ -80,12 +85,13 @@ img{
 }
 
 .card--title{
-  margin-top: 0;
+  margin: 0.1em 0;
   font-size: 1.56rem;
   color: #2B283A;
 }
 
 .card--dates{
+  margin: 1.5em 0;
   font-weight: 700;
   font-size: 0.65rem;
   line-height: 75%;

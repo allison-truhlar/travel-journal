@@ -14,8 +14,8 @@ export default function Card(props){
                     <a href={props.destination.googleMapsUrl} className="card--location-map">View on Google Maps</a>
                 </div>
                 <h2 className="card--title">{props.destination.title}</h2>
-                <p className="card--dates">{`${props.destination.startDate} - ${props.destination.endDate}`}</p>
                 <p className="card--description">{props.destination.description}</p>
+                {props.destination.hasVisited===true && <p className="card--dates">{`${props.destination.startDate} - ${props.destination.endDate}`}</p>}
             </div>
         </div>
        
